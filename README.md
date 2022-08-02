@@ -25,7 +25,10 @@ a person bid, and finally revealWinner, to randomly choose the winner for the it
 our design. Always remember to design first. The Auction smart contract has Item and Person structs
 and other data items such as array of Items, array of Persons, array of winners, mappings, and
 beneficiary address.
+
+
 <img width="189" alt="image" src="https://user-images.githubusercontent.com/77969439/182459018-7dba283e-b6ec-4cba-ae24-59874d43dd8a.png">
+
 <img width="314" alt="image" src="https://user-images.githubusercontent.com/77969439/182459138-03342770-c148-4e04-aba1-9e4e812992b3.png">
 
 
