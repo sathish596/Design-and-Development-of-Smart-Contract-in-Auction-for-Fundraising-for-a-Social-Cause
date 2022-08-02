@@ -11,3 +11,19 @@ Fixed number of items to be auctioned off, initialized to 3.
 Items auctioned are indexed from 0..N-1 where N is the number of items for auction. N is 2.
 Each bidder buys just 1 sheet of tickets or tokens; each sheet has only 5 tokens.
 Assume simple number for the serial numbers for the sheet of tickets: 0,1,2,3. Here we show the tokens of bidder 0 and 1.
+
+The Design:
+Let’s design the smart contract for this. Visualize the situation using the screen shot given below.
+<img width="189" alt="image" src="https://user-images.githubusercontent.com/77969439/182459018-7dba283e-b6ec-4cba-ae24-59874d43dd8a.png">
+These are the pictures of items, we need to define “Items” in the smart contract. We will also need to
+define Persons or bidders who will bidding on the Items. We will also need some supporting data
+variables.
+The functions are similar to the Ballot of our lessons. Constructor that initializes the owner, register that
+allows (decentralized person) to register online to get the tokens and start bidding, bid function that lets
+a person bid, and finally revealWinner, to randomly choose the winner for the item auctioned. Here is
+our design. Always remember to design first. The Auction smart contract has Item and Person structs
+and other data items such as array of Items, array of Persons, array of winners, mappings, and
+beneficiary address.
+<img width="314" alt="image" src="https://user-images.githubusercontent.com/77969439/182459138-03342770-c148-4e04-aba1-9e4e812992b3.png">
+
+
